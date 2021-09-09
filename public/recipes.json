@@ -1,0 +1,154 @@
+{
+  "recipies": [
+    {
+      "id": 1,
+      "name": "Cake",
+      "ingredients": [
+        {
+          "name": "flour",
+          "quantity": 2,
+          "unit": "table spoon"
+        },
+        {
+          "name": "sugar",
+          "quantity": 10,
+          "unit": "gram"
+        },
+        {
+          "name": "milk",
+          "quantity": 1,
+          "unit": "deciliter"
+        }
+      ],
+      "instructions": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit eu quam quis porta.",
+        "Duis magna elit, sodales ut nisl et, efficitur tristique lacus."
+      ],
+      "category": "lunch",
+      "images": {
+        "small": "./images/cake_small.jpg",
+        "big": "./images/cake_big.jpg"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Cake",
+      "ingredients": [
+        {
+          "name": "flour",
+          "quantity": 2,
+          "unit": "table spoon"
+        },
+        {
+          "name": "sugar",
+          "quantity": 10,
+          "unit": "gram"
+        },
+        {
+          "name": "milk",
+          "quantity": 1,
+          "unit": "deciliter"
+        }
+      ],
+      "instructions": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit eu quam quis porta.",
+        "Duis magna elit, sodales ut nisl et, efficitur tristique lacus."
+      ],
+      "category": "lunch",
+      "images": {
+        "small": "./images/cake_small.jpg",
+        "big": "./images/cake_big.jpg"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Cake",
+      "ingredients": [
+        {
+          "name": "flour",
+          "quantity": 2,
+          "unit": "table spoon"
+        },
+        {
+          "name": "sugar",
+          "quantity": 10,
+          "unit": "gram"
+        },
+        {
+          "name": "milk",
+          "quantity": 1,
+          "unit": "deciliter"
+        }
+      ],
+      "instructions": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit eu quam quis porta.",
+        "Duis magna elit, sodales ut nisl et, efficitur tristique lacus."
+      ],
+      "category": "lunch",
+      "images": {
+        "small": "./images/cake_small.jpg",
+        "big": "./images/cake_big.jpg"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Cake",
+      "ingredients": [
+        {
+          "name": "flour",
+          "quantity": 2,
+          "unit": "table spoon"
+        },
+        {
+          "name": "sugar",
+          "quantity": 10,
+          "unit": "gram"
+        },
+        {
+          "name": "milk",
+          "quantity": 1,
+          "unit": "deciliter"
+        }
+      ],
+      "instructions": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit eu quam quis porta.",
+        "Duis magna elit, sodales ut nisl et, efficitur tristique lacus."
+      ],
+      "category": "lunch",
+      "images": {
+        "small": "./images/cake_small.jpg",
+        "big": "./images/cake_big.jpg"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Cake",
+      "ingredients": [
+        {
+          "name": "flour",
+          "quantity": 2,
+          "unit": "table spoon"
+        },
+        {
+          "name": "sugar",
+          "quantity": 10,
+          "unit": "gram"
+        },
+        {
+          "name": "milk",
+          "quantity": 1,
+          "unit": "deciliter"
+        }
+      ],
+      "instructions": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit eu quam quis porta.",
+        "Duis magna elit, sodales ut nisl et, efficitur tristique lacus."
+      ],
+      "category": "lunch",
+      "images": {
+        "small": "./images/cake_small.jpg",
+        "big": "./images/cake_big.jpg"
+      }
+    }
+  ]
+}
