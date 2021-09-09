@@ -9,14 +9,14 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 const JSON_LOCAL_PATH = "./recipes.json";
 
 class App extends Component {
-  state = { data: undefined };
+  state = { recipes: undefined };
 
   getData = (path) => {
     fetch(path)
       .then((response) => {
         return response.json();
       })
-      .then((message) => this.setState({ data: message }))
+      .then((message) => this.setState({ recipes: message.recipes }))
       .catch((error) => console.log(error));
   };
 

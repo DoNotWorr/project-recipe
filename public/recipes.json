@@ -26,8 +26,8 @@
       ],
       "category": "lunch",
       "images": {
-        "small": "./images/cake_small.jpg",
-        "big": "./images/cake_big.jpg"
+        "small": "./images/meat_potato_small.jpg",
+        "big": "./images/meat_potato_big.jpg"
       }
     },
     {
