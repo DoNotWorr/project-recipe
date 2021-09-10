@@ -11,17 +11,20 @@ const JSON_LOCAL_PATH = "./recipes.json";
 class App extends Component {
   state = { recipes: undefined };
 
-  getData = (path) => {
-    fetch(path)
-      .then((response) => {
-        return response.json();
-      })
-      .then((message) => this.setState({ recipes: message.recipes }))
-      .catch((error) => console.log(error));
-  };
+  async getData(path) {
+    try {
+      const response = await fetch(path);
+      const message = await response.json();
+      console.log(`message: ${message}`);
+      return message.recipes;
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
-  componentDidMount() {
-    this.getData(JSON_LOCAL_PATH);
+  async componentDidMount() {
+    const recipes = await this.getData(JSON_LOCAL_PATH);
+    this.setState({ recipes: recipes });
   }
 
   render() {
