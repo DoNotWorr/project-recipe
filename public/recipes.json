@@ -1,5 +1,5 @@
 {
-  "recipies": [
+  "recipes": [
     {
       "id": 1,
       "name": "Cake",
@@ -84,7 +84,7 @@
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit eu quam quis porta.",
         "Duis magna elit, sodales ut nisl et, efficitur tristique lacus."
       ],
-      "category": "lunch",
+      "category": "breakfast",
       "images": {
         "small": "./images/cake_small.jpg",
         "big": "./images/cake_big.jpg"
@@ -144,7 +144,7 @@
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit eu quam quis porta.",
         "Duis magna elit, sodales ut nisl et, efficitur tristique lacus."
       ],
-      "category": "lunch",
+      "category": "dinner",
       "images": {
         "small": "./images/cake_small.jpg",
         "big": "./images/cake_big.jpg"
