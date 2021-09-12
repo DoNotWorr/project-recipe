@@ -7,22 +7,11 @@
   text-align: center;
 }
 
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background: rgba(217, 225, 228, 0.774);
-  color: white;
-}
-.nav-links {
-  display: flex;
-  width: 40%;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  list-style: none;
-}
-.routerLink {
-  text-decoration: none;
-  color: white;
+/*MEDIA-QUERIES*/
+@media (max-width: 600px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 5%;
+  }
 }

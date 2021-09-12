@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import Nav from "./components/Nav";
+import NavBar from "./components/NavBar/NavBar";
 import MainCourse from "./components/MainCourse";
 import Appetizer from "./components/Appetizer";
 import Dessert from "./components/Dessert";
@@ -31,7 +31,7 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-          <Nav />
+          <NavBar />
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/appetizer" component={Appetizer}>
