@@ -1,14 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .navbar {
   background-color: rgba(217, 225, 228);
   width: 100%;
   height: 15vh;
   display: flex;
   color: white;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar .leftside {
@@ -42,23 +39,30 @@
 
 .navbar .rightside .hamburger {
   display: none;
-  margin-right: 10px;
 }
-.navbar .rightside #hidden {
+.navbar .rightside .links:global(#hidden) {
   display: flex;
 }
 
 /*MEDIA-QUERIES*/
 
 @media only screen and (max-width: 600px) {
+  /*Todo: fix alignment. Having trouble aligning hamburger, wont respond*/
+  .navbar .rightside {
+    flex: 0%;
+    display: flex;
+  }
+
   .navbar .rightside .hamburger {
-    display: block;
+    /*Todo: fix alignment. Having trouble aligning hamburger, wont respond*/
+    display: inline-block;
+    padding: 0px;
   }
   .navbar .rightside .links {
     display: none;
   }
 
-  .navbar .rightside #hidden {
+  .navbar .rightside .links:global(#hidden) {
     position: absolute;
     right: 0px;
     top: 15vh;
@@ -70,7 +74,7 @@
     align-items: center;
     padding: 4vh;
   }
-  .navbar .rightside #hidden a {
+  .navbar .rightside .links:global(#hidden) a {
     margin: 0.5vh;
     font-size: 3vh;
   }
