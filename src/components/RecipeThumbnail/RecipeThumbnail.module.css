@@ -1,0 +1,25 @@
+.thumbnail {
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+}
+
+.thumbnail:hover {
+  border: 1px solid black;
+}
+
+.test {
+  width: 90%;
+  margin: 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  margin-bottom: 0%;
+  margin-top: 5%;
+  height: 50px;
+  color: black;
+}

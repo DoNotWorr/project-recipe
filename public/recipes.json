@@ -2,7 +2,7 @@
   "recipes": [
     {
       "id": 1,
-      "name": "Cake",
+      "name": "Meat and Potatoes",
       "ingredients": [
         {
           "name": "flour",
@@ -26,13 +26,13 @@
       ],
       "category": "lunch",
       "images": {
-        "small": "./images/meat_potato_small.jpg",
-        "big": "./images/meat_potato_big.jpg"
+        "small": "./images/meat_small.jpg",
+        "big": "./images/meat_big.jpg"
       }
     },
     {
       "id": 2,
-      "name": "Cake",
+      "name": "Chicken and Pasta",
       "ingredients": [
         {
           "name": "flour",
@@ -56,13 +56,13 @@
       ],
       "category": "lunch",
       "images": {
-        "small": "./images/cake_small.jpg",
-        "big": "./images/cake_big.jpg"
+        "small": "./images/chicken_small.jpg",
+        "big": "./images/chicken_big.jpg"
       }
     },
     {
       "id": 3,
-      "name": "Cake",
+      "name": "Fish and Potatoes",
       "ingredients": [
         {
           "name": "flour",
@@ -86,13 +86,13 @@
       ],
       "category": "breakfast",
       "images": {
-        "small": "./images/cake_small.jpg",
-        "big": "./images/cake_big.jpg"
+        "small": "./images/fish_small.jpg",
+        "big": "./images/fish_big.jpg"
       }
     },
     {
       "id": 4,
-      "name": "Cake",
+      "name": "Meat and French Fries",
       "ingredients": [
         {
           "name": "flour",
@@ -116,13 +116,13 @@
       ],
       "category": "lunch",
       "images": {
-        "small": "./images/cake_small.jpg",
-        "big": "./images/cake_big.jpg"
+        "small": "./images/meat_small.jpg",
+        "big": "./images/meat_big.jpg"
       }
     },
     {
       "id": 5,
-      "name": "Cake",
+      "name": "Chicken and Rice",
       "ingredients": [
         {
           "name": "flour",
@@ -146,8 +146,8 @@
       ],
       "category": "dinner",
       "images": {
-        "small": "./images/cake_small.jpg",
-        "big": "./images/cake_big.jpg"
+        "small": "./images/chicken_small.jpg",
+        "big": "./images/chicken_big.jpg"
       }
     }
   ]
