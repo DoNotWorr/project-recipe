@@ -15,7 +15,6 @@ class App extends Component {
     try {
       const response = await fetch(path);
       const message = await response.json();
-      console.log(`message: ${message}`);
       return message.recipes;
     } catch (error) {
       console.log(error);

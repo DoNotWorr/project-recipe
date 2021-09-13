@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
-import PreviewContainer from "../components/PreviewContainer/PreviewContainer";
+import RecipeThumbnail from "../components/RecipeThumbnail/RecipeThumbnail";
 
 const smallImage = "./images/meat_potato_small.jpg";
 const name = "Cake";
@@ -13,15 +13,15 @@ const recipe = {
   name: name,
 };
 
-describe("<PreviewContainer />", () => {
+describe("<RecipeThumbnail />", () => {
   test("it should mount", () => {
-    render(<PreviewContainer recipe={recipe} />);
+    render(<RecipeThumbnail recipe={recipe} />);
 
-    const previewContainer = screen.getByTestId("PreviewContainer");
+    const RecipeThumbnail = screen.getByTestId("RecipeThumbnail");
     const h1 = screen.getByText(name);
     const divWithBackground = screen.getByTestId("backgroundImage");
 
-    expect(previewContainer).toBeInTheDocument();
+    expect(RecipeThumbnail).toBeInTheDocument();
     expect(h1).toBeInTheDocument();
     expect(divWithBackground.style).toHaveProperty(
       "backgroundImage",
