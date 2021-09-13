@@ -5,10 +5,14 @@ export default class RecipeThumbnail extends React.Component {
   render() {
     const recipe = this.props.recipe;
     return (
-      <div className={styles.thumbnail}>
-        <a href="#" data-testid="RecipeThumbnail">
+      <div className={styles.thumbnail} data-testid="recipeThumbnail">
+        <a href="#">
           <h2>{recipe.name}</h2>
-          <img className={styles.test} src={recipe.images.small} />
+          <img
+            className={styles.test}
+            src={recipe.images.small}
+            alt="recipe image"
+          />
         </a>
       </div>
     );

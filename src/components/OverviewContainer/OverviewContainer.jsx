@@ -18,7 +18,6 @@ export default class OverviewContainer extends Component {
   };
 
   render() {
-    console.log(this.props);
     return (
       <div data-testid="OverviewContainer" className={styles.overview}>
         {this.state.displayedRecipes}
