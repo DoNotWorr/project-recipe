@@ -1,7 +1,7 @@
 {
   "recipes": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Mushroom Sandwich",
       "ingredients": [
         {
@@ -26,12 +26,12 @@
       ],
       "category": "Appetizers",
       "images": {
-        "small": "./images/meat_small.jpg",
-        "big": "./images/meat_big.jpg"
+        "small": "/images/meat_small.jpg",
+        "big": "/images/meat_big.jpg"
       }
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Chicken and Pasta",
       "ingredients": [
         {
@@ -56,12 +56,12 @@
       ],
       "category": "Main Courses",
       "images": {
-        "small": "./images/chicken_small.jpg",
-        "big": "./images/chicken_big.jpg"
+        "small": "/images/chicken_small.jpg",
+        "big": "/images/chicken_big.jpg"
       }
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Garlic Bread",
       "ingredients": [
         {
@@ -86,12 +86,12 @@
       ],
       "category": "Appetizers",
       "images": {
-        "small": "./images/fish_small.jpg",
-        "big": "./images/fish_big.jpg"
+        "small": "/images/fish_small.jpg",
+        "big": "/images/fish_big.jpg"
       }
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Meat and French Fries",
       "ingredients": [
         {
@@ -116,12 +116,12 @@
       ],
       "category": "Main Courses",
       "images": {
-        "small": "./images/meat_small.jpg",
-        "big": "./images/meat_big.jpg"
+        "small": "/images/meat_small.jpg",
+        "big": "/images/meat_big.jpg"
       }
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Chicken and Rice",
       "ingredients": [
         {
@@ -146,12 +146,12 @@
       ],
       "category": "Main Courses",
       "images": {
-        "small": "./images/chicken_small.jpg",
-        "big": "./images/chicken_big.jpg"
+        "small": "/images/chicken_small.jpg",
+        "big": "/images/chicken_big.jpg"
       }
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Chocolate Cake",
       "ingredients": [
         {
@@ -176,12 +176,12 @@
       ],
       "category": "Desserts",
       "images": {
-        "small": "./images/chicken_small.jpg",
-        "big": "./images/chicken_big.jpg"
+        "small": "/images/chicken_small.jpg",
+        "big": "/images/chicken_big.jpg"
       }
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Gingerbread",
       "ingredients": [
         {
@@ -206,8 +206,8 @@
       ],
       "category": "Desserts",
       "images": {
-        "small": "./images/meat_small.jpg",
-        "big": "./images/meat_big.jpg"
+        "small": "/images/meat_small.jpg",
+        "big": "/images/meat_big.jpg"
       }
     }
   ]
