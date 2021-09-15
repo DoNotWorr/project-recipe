@@ -10,7 +10,7 @@ export default class RecipeThumbnail extends React.Component {
 
     return (
       <div className={styles.thumbnail} data-testid="recipeThumbnail">
-        <Link id={recipe.id} to={`/recipes/${recipe.id}`}>
+        <Link id={recipe.id} to={`/recipe/${recipe.id}`}>
           <h2>{recipe.name}</h2>
           <img
             className={styles.test}
@@ -18,14 +18,6 @@ export default class RecipeThumbnail extends React.Component {
             alt="recipe image"
           />
         </Link>
-
-        <Router>
-          <Switch>
-            <Route path={`/recipes/${recipe.id}`}>
-              <Recipe recipe={this.props.recipe} />
-            </Route>
-          </Switch>
-        </Router>
       </div>
     );
   }
