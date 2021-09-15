@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import styles from "./Recipe.module.css";
 
 export default function Recipe(props) {
   const { id } = useParams();
@@ -7,26 +8,26 @@ export default function Recipe(props) {
   const recipe = props.getRecipeById(id);
 
   return (
-    <>
+    <div className={styles.recipe}>
       <h1>{recipe.name}</h1>
       <img src={recipe.images.big} alt={recipe.name} />
       <h2>Ingredients</h2>
-      <ul>
+      <ul className={styles.ingredients}>
         {recipe.ingredients.map((ingredient) => (
           <li>
-            {ingredient.name}
-            &nbsp;{ingredient.quantity}
-            &nbsp;{ingredient.unit}
+            <p>
+              {ingredient.name} {ingredient.quantity} {ingredient.unit}
+            </p>
           </li>
         ))}
       </ul>
 
       <h2>Instructions</h2>
-      <ol>
+      <ol className={styles.instructions}>
         {recipe.instructions.map((instruction) => (
           <li>{instruction}</li>
         ))}
       </ol>
-    </>
+    </div>
   );
 }
