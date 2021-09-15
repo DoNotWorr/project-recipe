@@ -7,8 +7,9 @@ export default class OverviewContainer extends Component {
 
   constructor(props) {
     super(props);
+    console.log({ props }, "props i overview");
     this.recipeElements = this.props.recipes.map((recipe) => (
-      <RecipeThumbnail recipe={recipe} />
+      <RecipeThumbnail recipe={recipe} key={recipe.id} />
     ));
     this.state.displayedRecipes = this.getNext(this.recipeElements.length); //currently displays all elements at once
   }
