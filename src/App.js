@@ -4,8 +4,13 @@ import NavBar from "./components/NavBar/NavBar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Recipe from "./components/Recipe/Recipe";
 import data from "./data/recipes.json";
+import Category from "./components/Category/Category";
 
-class App extends Component {
+const APPETIZER = "Appetizers";
+const MAIN_COURSE = "Main Courses";
+const DESSERT = "Desserts";
+
+export default class App extends Component {
   state = { recipes: data.recipes };
 
   // async getData(path) {
@@ -44,12 +49,12 @@ class App extends Component {
           <NavBar />
 
           <Switch>
-            <Route path="/" exact component={Category}>
+            <Route path="/" exact>
               {recipes && (
                 <Category category="Home" recipes={recipes} key="Home" />
               )}
             </Route>
-            <Route path="/appetizer" component={Category}>
+            <Route path="/appetizer">
               {recipes && (
                 <Category
                   category={APPETIZER}
@@ -58,7 +63,7 @@ class App extends Component {
                 />
               )}
             </Route>
-            <Route path="/main_course" component={Category}>
+            <Route path="/main_course">
               {recipes && (
                 <Category
                   category={MAIN_COURSE}
@@ -67,7 +72,7 @@ class App extends Component {
                 />
               )}
             </Route>
-            <Route path="/dessert" component={Category}>
+            <Route path="/dessert">
               {recipes && (
                 <Category
                   category={DESSERT}
