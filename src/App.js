@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
-import MainCourse from "./components/MainCourse";
-import Appetizer from "./components/Appetizer";
-import Dessert from "./components/Dessert";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 <<<<<<< HEAD
 import Recipe from "./components/Recipe/Recipe";
@@ -16,7 +13,6 @@ class App extends Component {
   state = { recipes: data.recipes };
 =======
 import Category from "./components/Category/Category";
-import OverviewContainer from "./components/OverviewContainer/OverviewContainer";
 
 const JSON_LOCAL_PATH = "./recipes.json";
 const APPETIZER = "Appetizers";

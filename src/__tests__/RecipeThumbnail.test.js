@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
-import RecipeThumbnail from "./RecipeThumbnail.jsx";
+import RecipeThumbnail from "../components/RecipeThumbnail/RecipeThumbnail.jsx";
 
 const recipe = {
   images: {
