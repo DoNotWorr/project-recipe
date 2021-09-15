@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import OverviewContainer from "../OverviewContainer/OverviewContainer";
-import styles from "./Category.module.css";
 
 export default class Category extends Component {
   render() {

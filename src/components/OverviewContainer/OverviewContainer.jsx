@@ -3,10 +3,6 @@ import styles from "./OverviewContainer.module.css";
 import RecipeThumbnail from "../RecipeThumbnail/RecipeThumbnail.jsx";
 
 export default class OverviewContainer extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   getNext = (n) => {
     return this.recipeElements.splice(0, n);
   };

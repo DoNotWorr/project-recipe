@@ -2,36 +2,16 @@ import React, { Component } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-<<<<<<< HEAD
 import Recipe from "./components/Recipe/Recipe";
-
 import data from "./data/recipes.json";
-
-const JSON_LOCAL_PATH = "./data/recipes.json";
-
-class App extends Component {
-  state = { recipes: data.recipes };
-=======
 import Category from "./components/Category/Category";
 
-const JSON_LOCAL_PATH = "./recipes.json";
 const APPETIZER = "Appetizers";
 const MAIN_COURSE = "Main Courses";
 const DESSERT = "Desserts";
 
 export default class App extends Component {
-  state = { recipes: undefined };
-
-  async getData(path) {
-    try {
-      const response = await fetch(path);
-      const message = await response.json();
-      return message.recipes;
-    } catch (error) {
-      console.log(error);
-    }
-  }
->>>>>>> e679ca0... category component
+  state = { recipes: data.recipes };
 
   // async getData(path) {
   //   try {
@@ -61,11 +41,7 @@ export default class App extends Component {
   };
 
   render() {
-<<<<<<< HEAD
-    console.log(this.state.recipes, "i app.js");
-=======
     const recipes = this.state.recipes;
->>>>>>> e679ca0... category component
     return (
       <div className="App">
         {/* {this.state.recipes && <Recipe recipe={this.state.recipes[1]} />} */}
@@ -73,25 +49,12 @@ export default class App extends Component {
           <NavBar />
 
           <Switch>
-<<<<<<< HEAD
-            <Route path="/" exact component={Home} />
-            <Route path="/appetizer" component={Appetizer}>
-              {this.state.recipes && <Appetizer recipes={this.state.recipes} />}
-            </Route>
-            <Route path="/main_course" component={MainCourse}>
-              {this.state.recipes && (
-                <MainCourse recipes={this.state.recipes} />
-              )}
-            </Route>
-            <Route path="/dessert" component={Dessert}>
-              {this.state.recipes && <Dessert recipes={this.state.recipes} />}
-=======
-            <Route path="/" exact component={Category}>
+            <Route path="/" exact>
               {recipes && (
                 <Category category="Home" recipes={recipes} key="Home" />
               )}
             </Route>
-            <Route path="/appetizer" component={Category}>
+            <Route path="/appetizer">
               {recipes && (
                 <Category
                   category={APPETIZER}
@@ -100,7 +63,7 @@ export default class App extends Component {
                 />
               )}
             </Route>
-            <Route path="/main_course" component={Category}>
+            <Route path="/main_course">
               {recipes && (
                 <Category
                   category={MAIN_COURSE}
@@ -109,7 +72,7 @@ export default class App extends Component {
                 />
               )}
             </Route>
-            <Route path="/dessert" component={Category}>
+            <Route path="/dessert">
               {recipes && (
                 <Category
                   category={DESSERT}
@@ -117,7 +80,6 @@ export default class App extends Component {
                   key={DESSERT}
                 />
               )}
->>>>>>> e679ca0... category component
             </Route>
             <Route
               path="/recipe/:id"
