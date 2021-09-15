@@ -1,8 +1,10 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
 export default function Recipe(props) {
-  console.log(props.recipe, "i recipe-component");
-  const recipe = props.recipe;
+  const { id } = useParams();
+
+  const recipe = props.getRecipeById(id);
 
   return (
     <>

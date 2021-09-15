@@ -13,25 +13,16 @@ const DESSERT = "Desserts";
 export default class App extends Component {
   state = { recipes: data.recipes };
 
-  // async getData(path) {
-  //   try {
-  //     const response = await fetch(path);
-  //     const message = await response.json();
-  //     return message.recipes;
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // }
-
-  // async componentDidMount() {
-  //   const recipes = await this.getData(JSON_LOCAL_PATH);
-  //   this.setState({ recipes: recipes });
-  // }
   getRecipeById = (id) => {
     const result = this.state.recipes.filter((recipe) => recipe.id === id);
-    if (result.isEmpty) {
+    console.log(this.state.recipes, "this.state.recipes");
+    console.log(id, "id för filter");
+    console.log(result, "result");
+
+    if (result.length <= 0) {
       console.log("cannot find matching id");
     } else {
+      console.log(result[0], "result[0]");
       return result[0];
     }
   };
@@ -44,7 +35,6 @@ export default class App extends Component {
     const recipes = this.state.recipes;
     return (
       <div className="App">
-        {/* {this.state.recipes && <Recipe recipe={this.state.recipes[1]} />} */}
         <Router>
           <NavBar />
 
@@ -81,12 +71,9 @@ export default class App extends Component {
                 />
               )}
             </Route>
-            <Route
-              path="/recipe/:id"
-              render={({ match }) => (
-                <Recipe recipe={this.getRecipeById(match.param.id)} />
-              )}
-            />
+            <Route path="/recipe/:id">
+              <Recipe getRecipeById={this.getRecipeById} />
+            </Route>
           </Switch>
         </Router>
       </div>
