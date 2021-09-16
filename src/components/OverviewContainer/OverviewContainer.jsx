@@ -2,11 +2,12 @@ import React, { Component } from "react";
 import styles from "./OverviewContainer.module.css";
 import RecipeThumbnail from "../RecipeThumbnail/RecipeThumbnail.jsx";
 
+/**
+ * Contains a grid of recipe thumbnails.
+ *
+ * Props.recipes - list of recipes
+ */
 export default class OverviewContainer extends Component {
-  getNext = (n) => {
-    return this.recipeElements.splice(0, n);
-  };
-
   render() {
     const elements = this.props.recipes.map((recipe) => (
       <RecipeThumbnail recipe={recipe} key={recipe.id} />
