@@ -11,9 +11,10 @@
 }
 
 .navbar h1 {
-  font-size: 4vh;
-  padding: 5vh;
+  font-size: 5vh;
+  padding: 4vh;
   justify-self: left;
+  vertical-align: middle;
 }
 
 .navbar .links {
