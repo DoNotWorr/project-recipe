@@ -21,9 +21,7 @@ export default function Recipe(props) {
       <ul className={styles.ingredients}>
         {recipe.ingredients.map((ingredient) => (
           <li>
-            <p>
-              {ingredient.name} {ingredient.quantity} {ingredient.unit}
-            </p>
+            {ingredient.name} {ingredient.quantity} {ingredient.unit}
           </li>
         ))}
       </ul>
