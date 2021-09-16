@@ -5,7 +5,7 @@ import RecipeThumbnail from "../RecipeThumbnail/RecipeThumbnail.jsx";
 /**
  * Contains a grid of recipe thumbnails.
  *
- * Props.recipes - list of recipes
+ * @const props.recipes - list of recipes
  */
 export default class OverviewContainer extends Component {
   render() {

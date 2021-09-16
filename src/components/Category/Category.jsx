@@ -4,8 +4,8 @@ import OverviewContainer from "../OverviewContainer/OverviewContainer";
 /**
  * Category is the main container for a category page.
  *
- * Props.category - name of the category
- * Props.recipes - list of recipes
+ * @const props.category name of the category
+ * @const props.recipes list of recipes
  */
 export default class Category extends Component {
   render() {

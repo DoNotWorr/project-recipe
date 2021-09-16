@@ -4,6 +4,9 @@ import { useState } from "react";
 import Hamburger from "hamburger-react";
 import styles from "./NavBar.module.css";
 
+/**
+ * Contains logo and menu. In mobile version, the menu is a collapsible and has a hamburger button.
+ */
 const NavBar = () => {
   const [showLinks, setShowLinks] = useState(false);
   return (
