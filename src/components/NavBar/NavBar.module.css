@@ -4,78 +4,60 @@
   height: 15vh;
   display: flex;
   color: white;
+  justify-content: space-between;
+  vertical-align: middle;
   margin: 0;
   padding: 0;
 }
 
-.navbar .leftside {
-  flex: 50%;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
-.navbar .leftside h1 {
+.navbar h1 {
+  font-size: 4vh;
   padding: 5vh;
+  justify-self: left;
 }
 
-.navbar .rightside {
-  flex: 50%;
-  display: flex;
-  justify-content: left;
-  align-items: center;
+.navbar .links {
+  padding: 5vh;
+  justify-self: right;
+  justify-content: space-between;
 }
 
-.navbar .rightside .links {
-  max-height: 15vh;
-}
-
-.navbar .rightside .links a {
+.navbar .links a {
   text-decoration: none;
   list-style: none;
   color: white;
   font-size: 4vh;
-  margin-left: 15px;
+  padding: 0 2vh 0 2vh;
 }
 
-.navbar .rightside .hamburger {
+.navbar .hamburger {
   display: none;
 }
-.navbar .rightside .links:global(#hidden) {
+.navbar .links:global(#hidden) {
   display: flex;
 }
 
 /*MEDIA-QUERIES*/
 
-@media only screen and (max-width: 600px) {
-  /*Todo: fix alignment. Having trouble aligning hamburger, wont respond*/
-  .navbar .rightside {
-    flex: 0%;
+@media only screen and (max-width: 900px) {
+  .navbar .hamburger {
+    padding: 3vh;
     display: flex;
   }
-
-  .navbar .rightside .hamburger {
-    /*Todo: fix alignment. Having trouble aligning hamburger, wont respond*/
-    display: inline-block;
-    padding: 0px;
-  }
-  .navbar .rightside .links {
+  .navbar .links {
     display: none;
   }
 
-  .navbar .rightside .links:global(#hidden) {
-    position: absolute;
-    right: 0px;
-    top: 15vh;
-    background-color: rgba(217, 225, 228);
-    max-height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 4vh;
-  }
-  .navbar .rightside .links:global(#hidden) a {
-    margin: 0.5vh;
+  .navbar .links:global(#hidden) {
     font-size: 3vh;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    top: 15vh;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(217, 225, 228, 0.8);
+    margin: 0;
+    padding: 0;
   }
 }

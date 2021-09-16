@@ -9,7 +9,10 @@ export default class Header extends Component {
     return (
       <div
         className={styles.banner}
-        style={{ backgroundImage: `url(${backgroundImage})` }}>
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundSize: "cover",
+        }}>
         <div className={styles.title}>
           <h1>{title}</h1>
         </div>
