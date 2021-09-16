@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Recipe from "./components/Recipe/Recipe";
 import data from "./data/recipes.json";
 import Category from "./components/Category/Category";
+import Header from "./components/Header/Header";
 
 // Constants used for category names and also to filter recipes (must match the data source)
 const APPETIZER = "Appetizers";
@@ -42,6 +43,10 @@ export default class App extends Component {
 
   render() {
     const recipes = this.state.recipes;
+    const homeimg = "./images/homeheader.jpg";
+    const appzimg = "./images/appetizers.jpeg";
+    const mainimg = "./images/maincourse.jpeg";
+    const dessertimg = "./images/pancakes.jpeg";
     return (
       <div className="App">
         <Router>
@@ -49,11 +54,13 @@ export default class App extends Component {
 
           <Switch>
             <Route path="/" exact>
+              <Header text="Amazing Recipes" image={homeimg} />
               {recipes && (
                 <Category category="Home" recipes={recipes} key="Home" />
               )}
             </Route>
             <Route path="/appetizer">
+              <Header text="Appetizers" image={appzimg} />
               {recipes && (
                 <Category
                   category={APPETIZER}
@@ -63,6 +70,7 @@ export default class App extends Component {
               )}
             </Route>
             <Route path="/main_course">
+              <Header text="Main courses" image={mainimg} />
               {recipes && (
                 <Category
                   category={MAIN_COURSE}
@@ -72,6 +80,7 @@ export default class App extends Component {
               )}
             </Route>
             <Route path="/dessert">
+              <Header text="Desserts" image={dessertimg} />
               {recipes && (
                 <Category
                   category={DESSERT}
