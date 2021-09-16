@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 
 /**
  * Displays a thumbnail of a recipe which links to the recipe page. Routing is done in App.js
+ *
+ * props.recipe - recipe to render
  */
 export default class RecipeThumbnail extends Component {
   render() {
