@@ -6,6 +6,8 @@ import Recipe from "./components/Recipe/Recipe";
 import data from "./data/recipes.json";
 import Category from "./components/Category/Category";
 import Header from "./components/Header/Header";
+import Popular from "./components/Popular/Popular";
+import popularRecipes from "./data/popular-recipes.json";
 
 // Constants used for category names and also to filter recipes (must match the data source)
 const APPETIZER = "Appetizers";
@@ -13,7 +15,7 @@ const MAIN_COURSE = "Main Courses";
 const DESSERT = "Desserts";
 
 export default class App extends Component {
-  state = { recipes: data.recipes };
+  state = { recipes: data.recipes, popular: popularRecipes.recipes };
 
   /**
    * Filters recipes in state by id.
@@ -43,6 +45,7 @@ export default class App extends Component {
 
   render() {
     const recipes = this.state.recipes;
+    const popularRecipes = this.state.popular;
     const homeimg = "./images/homeheader.jpg";
     const appzimg = "./images/appetizers.jpeg";
     const mainimg = "./images/maincourse.jpeg";
@@ -55,6 +58,7 @@ export default class App extends Component {
           <Switch>
             <Route path="/" exact>
               <Header text="Amazing Recipes" image={homeimg} />
+              {popularRecipes && <Popular recipes={popularRecipes} />}
               {recipes && (
                 <Category category="Home" recipes={recipes} key="Home" />
               )}

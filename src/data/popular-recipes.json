@@ -1,0 +1,184 @@
+{
+  "recipes": [
+    {
+      "id": "1",
+      "name": "Mushroom Sandwich",
+      "ingredients": [
+        {
+          "name": "flour",
+          "quantity": 2,
+          "unit": "table spoon"
+        },
+        {
+          "name": "sugar",
+          "quantity": 10,
+          "unit": "gram"
+        },
+        {
+          "name": "milk",
+          "quantity": 1,
+          "unit": "deciliter"
+        }
+      ],
+      "instructions": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit eu quam quis porta.",
+        "Duis magna elit, sodales ut nisl et, efficitur tristique lacus."
+      ],
+      "category": "Appetizers",
+      "images": {
+        "small": "/images/meat_small.jpg",
+        "big": "/images/meat_big.jpg"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Chicken and Pasta",
+      "ingredients": [
+        {
+          "name": "flour",
+          "quantity": 2,
+          "unit": "table spoon"
+        },
+        {
+          "name": "sugar",
+          "quantity": 10,
+          "unit": "gram"
+        },
+        {
+          "name": "milk",
+          "quantity": 1,
+          "unit": "deciliter"
+        }
+      ],
+      "instructions": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit eu quam quis porta.",
+        "Duis magna elit, sodales ut nisl et, efficitur tristique lacus."
+      ],
+      "category": "Main Courses",
+      "images": {
+        "small": "/images/chicken_small.jpg",
+        "big": "/images/chicken_big.jpg"
+      }
+    },
+    {
+      "id": "3",
+      "name": "Garlic Bread",
+      "ingredients": [
+        {
+          "name": "flour",
+          "quantity": 2,
+          "unit": "table spoon"
+        },
+        {
+          "name": "sugar",
+          "quantity": 10,
+          "unit": "gram"
+        },
+        {
+          "name": "milk",
+          "quantity": 1,
+          "unit": "deciliter"
+        }
+      ],
+      "instructions": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit eu quam quis porta.",
+        "Duis magna elit, sodales ut nisl et, efficitur tristique lacus."
+      ],
+      "category": "Appetizers",
+      "images": {
+        "small": "/images/fish_small.jpg",
+        "big": "/images/fish_big.jpg"
+      }
+    },
+    {
+      "id": "4",
+      "name": "Meat and French Fries",
+      "ingredients": [
+        {
+          "name": "flour",
+          "quantity": 2,
+          "unit": "table spoon"
+        },
+        {
+          "name": "sugar",
+          "quantity": 10,
+          "unit": "gram"
+        },
+        {
+          "name": "milk",
+          "quantity": 1,
+          "unit": "deciliter"
+        }
+      ],
+      "instructions": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit eu quam quis porta.",
+        "Duis magna elit, sodales ut nisl et, efficitur tristique lacus."
+      ],
+      "category": "Main Courses",
+      "images": {
+        "small": "/images/meat_small.jpg",
+        "big": "/images/meat_big.jpg"
+      }
+    },
+    {
+      "id": "5",
+      "name": "Chicken and Rice",
+      "ingredients": [
+        {
+          "name": "flour",
+          "quantity": 2,
+          "unit": "table spoon"
+        },
+        {
+          "name": "sugar",
+          "quantity": 10,
+          "unit": "gram"
+        },
+        {
+          "name": "milk",
+          "quantity": 1,
+          "unit": "deciliter"
+        }
+      ],
+      "instructions": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit eu quam quis porta.",
+        "Duis magna elit, sodales ut nisl et, efficitur tristique lacus."
+      ],
+      "category": "Main Courses",
+      "images": {
+        "small": "/images/chicken_small.jpg",
+        "big": "/images/chicken_big.jpg"
+      }
+    },
+    {
+      "id": "6",
+      "name": "Chocolate Cake",
+      "ingredients": [
+        {
+          "name": "flour",
+          "quantity": 2,
+          "unit": "table spoon"
+        },
+        {
+          "name": "sugar",
+          "quantity": 10,
+          "unit": "gram"
+        },
+        {
+          "name": "milk",
+          "quantity": 1,
+          "unit": "deciliter"
+        }
+      ],
+      "instructions": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit eu quam quis porta.",
+        "Duis magna elit, sodales ut nisl et, efficitur tristique lacus."
+      ],
+      "category": "Desserts",
+      "images": {
+        "small": "/images/chicken_small.jpg",
+        "big": "/images/chicken_big.jpg"
+      }
+    }
+  ]
+}
