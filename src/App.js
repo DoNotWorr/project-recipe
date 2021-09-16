@@ -6,6 +6,7 @@ import Recipe from "./components/Recipe/Recipe";
 import data from "./data/recipes.json";
 import Category from "./components/Category/Category";
 
+// Constants used for category names and also to filter recipes (must match the data source)
 const APPETIZER = "Appetizers";
 const MAIN_COURSE = "Main Courses";
 const DESSERT = "Desserts";
@@ -13,20 +14,28 @@ const DESSERT = "Desserts";
 export default class App extends Component {
   state = { recipes: data.recipes };
 
+  /**
+   * Filters recipes in state by id.
+   *
+   * @param {*} id
+   * @returns recipe (if it exists)
+   */
   getRecipeById = (id) => {
     const result = this.state.recipes.filter((recipe) => recipe.id === id);
-    console.log(this.state.recipes, "this.state.recipes");
-    console.log(id, "id för filter");
-    console.log(result, "result");
-
     if (result.length <= 0) {
       console.log("cannot find matching id");
     } else {
-      console.log(result[0], "result[0]");
       return result[0];
     }
   };
 
+  /**
+   * Filters a list of recipes by category
+   *
+   * @param {*} recipes list of recipes
+   * @param {String} category name of category (case sensitive)
+   * @returns list of recipes with given category
+   */
   filterByCategory = (recipes, category) => {
     return recipes.filter((recipe) => recipe.category === category);
   };
