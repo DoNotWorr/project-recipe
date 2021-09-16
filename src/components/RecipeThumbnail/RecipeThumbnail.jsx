@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import styles from "./RecipeThumbnail.module.css";
 import { Link } from "react-router-dom";
 
+/**
+ * Displays a thumbnail of a recipe which links to the recipe page. Routing is done in App.js
+ */
 export default class RecipeThumbnail extends Component {
   render() {
     const recipe = this.props.recipe;

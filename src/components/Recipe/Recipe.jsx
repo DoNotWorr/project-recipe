@@ -2,6 +2,12 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import styles from "./Recipe.module.css";
 
+/**
+ * Displays a recipe
+ *
+ * @const id from url /recipes/id
+ * @const props.getRecipeById method to fetch a recipe to display
+ */
 export default function Recipe(props) {
   const { id } = useParams();
 
