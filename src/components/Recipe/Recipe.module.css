@@ -1,5 +1,16 @@
 .ingredients {
+  display: flex;
+  flex-direction: column;
+  list-style: disc inside;
+  padding: 0 0 6vh 0;
+  vertical-align: middle;
+  justify-content: center;
+  margin: 0;
 }
 
 .instructions {
+  display: flex;
+  list-style: decimal inside;
+  flex-direction: column;
+  padding: 0 0 6vh 0;
 }
