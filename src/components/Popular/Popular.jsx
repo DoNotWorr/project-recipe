@@ -20,12 +20,23 @@ export default class Popular extends Component {
           className={styles.container}
           options={{
             autoWidth: true,
-            focus: "center",
             gap: "1rem",
-            trimSpace: false,
+            perPage: 2,
             easing: "ease",
             autoplay: true,
             interval: 4000,
+            breakpoints: {},
+            classes: {
+              // Add classes for arrows.
+              arrows: "splide__arrows your-class-arrows",
+              arrow: "splide__arrow your-class-arrow",
+              prev: "splide__arrow--prev your-class-prev",
+              next: "splide__arrow--next your-class-next",
+
+              // Add classes for pagination.
+              pagination: "splide__pagination your-class-pagination", // container
+              page: "splide__pagination__page your-class-page", // each button
+            },
           }}>
           {splideSlides}
         </Splide>

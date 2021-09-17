@@ -1,7 +1,9 @@
 .container {
-  margin: 2%;
 }
 
 .item {
-  margin: 2% 0;
+}
+
+.your-class-page {
+  margin: 10rem;
 }
