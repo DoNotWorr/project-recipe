@@ -1,5 +1,13 @@
 .ingredients {
+  display: flex;
+  flex-direction: column;
+  list-style: disc inside;
+  margin: 0;
 }
 
 .instructions {
+  display: flex;
+  list-style: decimal inside;
+  flex-direction: column;
+  padding: 0 0 6vh 0;
 }
