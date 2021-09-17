@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/splide/dist/css/themes/splide-default.min.css";
+import "@splidejs/splide/dist/css/themes/splide-sea-green.min.css";
 import RecipeThumbnail from "../RecipeThumbnail/RecipeThumbnail";
 import styles from "./Popular.module.css";
 
@@ -23,13 +23,13 @@ export default class Popular extends Component {
         <Splide
           className={styles.container}
           options={{
-            perPage: 4,
+            perPage: 5,
             /*autoplay: false,
             fixedHeight: "22rem",
             autoWidth: true,*/
             easing: "ease",
             interval: 5000,
-            breakpoints: { 600: { perPage: 3 } },
+            breakpoints: { 599: { perPage: 3 }, 999: { perPage: 4 } },
             classes: {
               // Add classes for arrows.
               arrows: `splide__arrows ${styles.arrows}`,
