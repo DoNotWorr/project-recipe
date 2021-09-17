@@ -15,7 +15,7 @@ export default function Recipe(props) {
 
   return (
     <div className={styles.recipe}>
-      <h1>{recipe.name}</h1>
+      <h2>{recipe.name}</h2>
       <img src={recipe.images.big} alt={recipe.name} />
       <h2>Ingredients</h2>
       <ul className={styles.ingredients}>
