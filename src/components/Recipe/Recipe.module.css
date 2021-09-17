@@ -4,10 +4,17 @@
   list-style: disc inside;
   margin: 0;
 }
+.ingredients ul li {
+  text-align: left;
+}
 
 .instructions {
   display: flex;
   list-style: decimal inside;
   flex-direction: column;
   padding: 0 0 6vh 0;
+}
+
+.recipe h1 {
+  padding: 4vh;
 }

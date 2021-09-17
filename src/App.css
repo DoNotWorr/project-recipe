@@ -5,4 +5,12 @@
 
 .App {
   text-align: center;
+  background-color: rgb(41, 196, 196);
+  font-family: "Montserrat", sans-serif;
+}
+.App h2 {
+  color: #eafdf9;
+}
+.App h3 {
+  color: rgba(27, 110, 110);
 }

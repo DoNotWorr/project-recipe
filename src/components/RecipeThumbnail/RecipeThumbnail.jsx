@@ -14,9 +14,9 @@ export default class RecipeThumbnail extends Component {
     return (
       <div className={styles.thumbnail} data-testid="recipeThumbnail">
         <Link to={`/recipe/${recipe.id}`}>
-          <h2>{recipe.name}</h2>
+          <h3 className={styles.recipeName}>{recipe.name}</h3>
           <img
-            className={styles.test}
+            className={styles.thumbnailImg}
             src={recipe.images.small}
             alt={recipe.name}
           />
