@@ -1,9 +1,35 @@
+/* Before styling in CSS, check if there is a property in the Splide component */
+
 .container {
 }
 
-.item {
+.arrows {
 }
 
-.your-class-page {
-  margin: 10rem;
+.pagination {
+  bottom: -17px;
+}
+
+/* Color */
+.arrow svg {
+  fill: blue;
+}
+
+.page {
+  background-color: green;
+}
+
+/* Color of active page button
+ (Splide doesn't support naming this class) */
+:global(button.splide__pagination__page.is-active) {
+  background-color: red;
+}
+
+/* Color when hover */
+.page:hover {
+  background-color: rebeccapurple;
+}
+
+.arrow:hover svg {
+  fill: rebeccapurple;
 }

@@ -9,7 +9,11 @@ export default class Popular extends Component {
     const recipes = this.props.recipes;
     const splideSlides = recipes.map((recipe) => (
       <SplideSlide className={styles.item}>
-        <RecipeThumbnail recipe={recipe} key={recipe.id} />
+        <RecipeThumbnail
+          recipe={recipe}
+          key={recipe.id}
+          className={styles.thumbnail}
+        />
       </SplideSlide>
     ));
 
@@ -19,23 +23,23 @@ export default class Popular extends Component {
         <Splide
           className={styles.container}
           options={{
-            autoWidth: true,
-            gap: "1rem",
-            perPage: 2,
+            perPage: 4,
+            /*autoplay: false,
+            fixedHeight: "22rem",
+            autoWidth: true,*/
             easing: "ease",
-            autoplay: true,
-            interval: 4000,
-            breakpoints: {},
+            interval: 5000,
+            breakpoints: { 600: { perPage: 3 } },
             classes: {
               // Add classes for arrows.
-              arrows: "splide__arrows your-class-arrows",
-              arrow: "splide__arrow your-class-arrow",
-              prev: "splide__arrow--prev your-class-prev",
-              next: "splide__arrow--next your-class-next",
+              arrows: `splide__arrows ${styles.arrows}`,
+              arrow: `splide__arrow ${styles.arrow}`,
+              prev: `splide__arrow--prev ${styles.prev}`,
+              next: `splide__arrow--next ${styles.next}`,
 
               // Add classes for pagination.
-              pagination: "splide__pagination your-class-pagination", // container
-              page: "splide__pagination__page your-class-page", // each button
+              pagination: `splide__pagination ${styles.pagination}`, // container
+              page: `splide__pagination__page ${styles.page}`, // each button
             },
           }}>
           {splideSlides}
