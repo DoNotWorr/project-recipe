@@ -8,6 +8,7 @@ import Category from "./components/Category/Category";
 import Header from "./components/Header/Header";
 import Popular from "./components/Popular/Popular";
 import popularRecipes from "./data/popular-recipes.json";
+import Footer from "./components/Footer/Footer";
 
 // Constants used for category names and also to filter recipes (must match the data source)
 const APPETIZER = "Appetizers";
@@ -97,6 +98,11 @@ export default class App extends Component {
               <Recipe getRecipeById={this.getRecipeById} />
             </Route>
           </Switch>
+
+          <div className="temporary">
+            <h1>temp div</h1>
+          </div>
+          <Footer />
         </Router>
       </div>
     );
