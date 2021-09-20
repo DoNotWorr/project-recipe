@@ -1,35 +1,28 @@
 /* Before styling in CSS, check if there is a property in the Splide component */
 
 .container {
+  margin: 4%;
 }
-
-.arrows {
-}
-
-.pagination {
-  bottom: -17px;
-}
-
 /* Color */
 .arrow svg {
-  fill: blue;
+  fill: var(--white);
 }
 
 .page {
-  background-color: green;
+  background-color: var(--white);
 }
 
 /* Color of active page button
  (Splide doesn't support naming this class) */
 :global(button.splide__pagination__page.is-active) {
-  background-color: red;
+  background-color: var(--navbarcolor);
 }
 
 /* Color when hover */
 .page:hover {
-  background-color: rebeccapurple;
+  background-color: var(--navbarcolor);
 }
 
 .arrow:hover svg {
-  fill: rebeccapurple;
+  fill: var(--navbarcolor);
 }

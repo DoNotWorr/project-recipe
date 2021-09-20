@@ -9,14 +9,9 @@ export default class Popular extends Component {
     const recipes = this.props.recipes;
     const splideSlides = recipes.map((recipe) => (
       <SplideSlide className={styles.item}>
-        <RecipeThumbnail
-          recipe={recipe}
-          key={recipe.id}
-          className={styles.thumbnail}
-        />
+        <RecipeThumbnail recipe={recipe} key={recipe.id} sliderStyle />
       </SplideSlide>
     ));
-
     return (
       <>
         <h2>Popular Dishes</h2>
@@ -24,6 +19,7 @@ export default class Popular extends Component {
           className={styles.container}
           options={{
             perPage: 5,
+
             /*autoplay: false,
             fixedHeight: "22rem",
             autoWidth: true,*/

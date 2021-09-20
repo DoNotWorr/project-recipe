@@ -1,7 +1,4 @@
 .page {
-  background-color: rgb(41, 196, 196);
-}
-
-.page h1 {
-  color: #4eaa9b;
+  background-color: var(--background);
+  height: 100%;
 }
