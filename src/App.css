@@ -21,4 +21,5 @@
   --navbarcolor: rgba(27, 110, 110);
   --titles: rgba(245, 113, 113);
   --ingtitles: rgb(241, 240, 240); /*instructions and ingredients*/
+  --white: rgb(234, 253, 249); /*slider arrow+ button & header*/
 }

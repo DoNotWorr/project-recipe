@@ -12,8 +12,6 @@ export default class Popular extends Component {
         <RecipeThumbnail recipe={recipe} key={recipe.id} sliderStyle />
       </SplideSlide>
     ));
-    const splide = new Splide(".splide");
-    console.log(splide);
     return (
       <>
         <h2>Popular Dishes</h2>

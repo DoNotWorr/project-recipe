@@ -9,7 +9,7 @@
 
 /* The text in banner*/
 .title {
-  color: #eafdf9;
+  color: var(--white);
   background-color: rgba(27, 110, 110, 0.4);
   font-size: xx-large;
   position: absolute;

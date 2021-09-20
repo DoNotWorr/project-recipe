@@ -5,27 +5,24 @@
 }
 /* Color */
 .arrow svg {
-  fill: #eafdf9;
+  fill: var(--white);
 }
 
 .page {
-  background-color: #eafdf9;
+  background-color: var(--white);
 }
 
 /* Color of active page button
  (Splide doesn't support naming this class) */
 :global(button.splide__pagination__page.is-active) {
-  background-color: rgba(27, 110, 110);
+  background-color: var(--navbarcolor);
 }
 
 /* Color when hover */
 .page:hover {
-  background-color: rgba(27, 110, 110);
+  background-color: var(--navbarcolor);
 }
 
 .arrow:hover svg {
-  fill: rgba(27, 110, 110);
-}
-
-h2 {
+  fill: var(--navbarcolor);
 }
