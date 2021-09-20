@@ -10,7 +10,7 @@ import RecipeThumbnail from "../RecipeThumbnail/RecipeThumbnail.jsx";
 export default class OverviewContainer extends Component {
   render() {
     const elements = this.props.recipes.map((recipe) => (
-      <RecipeThumbnail recipe={recipe} key={recipe.id} />
+      <RecipeThumbnail recipe={recipe} key={recipe.id} displayTitle />
     ));
     return (
       <div data-testid="OverviewContainer" className={styles.overview}>

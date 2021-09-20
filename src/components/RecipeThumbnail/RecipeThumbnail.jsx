@@ -6,10 +6,12 @@ import { Link } from "react-router-dom";
  * Displays a thumbnail of a recipe which links to the recipe page. Routing is done in App.js
  *
  * props.recipe - recipe to render
+ * props.displayTitle - show recipe's title on thumbnail if true
  */
 export default class RecipeThumbnail extends Component {
   render() {
     const recipe = this.props.recipe;
+    const displayTitle = this.props.displayTitle;
 
     return (
       <Link to={`/recipe/${recipe.id}`}>
@@ -20,7 +22,11 @@ export default class RecipeThumbnail extends Component {
             backgroundImage: `url(${recipe.images.small})`,
             backgroundSize: "cover",
           }}>
-          <h3 className={styles.recipeName}>{recipe.name}</h3>
+          {displayTitle ? (
+            <h3 className={styles.recipeName}>{recipe.name}</h3>
+          ) : (
+            " "
+          )}
         </div>
       </Link>
     );
