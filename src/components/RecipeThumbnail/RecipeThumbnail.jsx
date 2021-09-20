@@ -11,22 +11,19 @@ import { Link } from "react-router-dom";
 export default class RecipeThumbnail extends Component {
   render() {
     const recipe = this.props.recipe;
-    const displayTitle = this.props.displayTitle;
+    const sliderStyle = this.props.sliderStyle;
+    const style = !sliderStyle ? styles.thumbnail : styles.slider;
 
     return (
       <Link to={`/recipe/${recipe.id}`}>
         <div
-          className={styles.thumbnail}
+          className={style}
           data-testid="recipeThumbnail"
           style={{
             backgroundImage: `url(${recipe.images.small})`,
             backgroundSize: "cover",
           }}>
-          {displayTitle ? (
-            <h3 className={styles.recipeName}>{recipe.name}</h3>
-          ) : (
-            " "
-          )}
+          {!sliderStyle ? <h3>{recipe.name}</h3> : " "}
         </div>
       </Link>
     );

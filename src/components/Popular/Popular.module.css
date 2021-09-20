@@ -1,15 +1,8 @@
 /* Before styling in CSS, check if there is a property in the Splide component */
 
 .container {
+  margin: 4%;
 }
-
-.arrows {
-}
-
-.pagination {
-  bottom: -17px;
-}
-
 /* Color */
 .arrow svg {
   fill: #eafdf9;

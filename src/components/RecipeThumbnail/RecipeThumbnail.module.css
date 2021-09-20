@@ -1,43 +1,43 @@
 .thumbnail {
-  text-align: center;
-  box-sizing: border-box;
   position: relative;
-
-  min-height: 25vh;
-  width: 90%;
+  padding-top: 100%;
   border-radius: 7%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.recipeName {
+.thumbnail h3 {
+  display: inline-block;
   position: absolute;
-  bottom: 0%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgb(241, 240, 240, 0.9);
+  bottom: 20%;
+  left: 0;
   width: 100%;
+  padding: 7% 0;
+  background-color: rgb(241, 240, 240, 1);
   font-size: 1.3rem;
-  padding: 2vh;
 }
 
 .thumbnail:hover {
   opacity: 0.7;
 }
 
-a {
-  text-decoration: none;
+.slider {
+  text-align: center;
+  padding-top: 100%;
+  margin: 5%;
+  border-radius: 7%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+.slider:hover {
+  opacity: 0.7;
+}
 @media only screen and (max-width: 1521px) {
   .recipeName {
     font-size: 1rem;
-    width: 80%;
   }
 }
 
 @media only screen and (max-width: 1400px) {
   .recipeName {
     font-size: 1rem;
-    width: 76%;
   }
 }
 @media only screen and (max-width: 900px) {

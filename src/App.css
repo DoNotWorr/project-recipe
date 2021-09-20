@@ -7,7 +7,7 @@
   text-align: center;
   background-color: var(--background);
   font-family: "Montserrat", sans-serif;
-  height: 2000px; /*pixles to make sure background color covers whole page*/
+  height: 100%;
 }
 .App h2 {
   color: var(--titles);
@@ -23,7 +23,7 @@
   --ingtitles: rgb(241, 240, 240); /*instructions and ingredients*/
 }
 
-.temporary {
+/* .temporary {
   background-color: white;
   height: 100px;
-}
+} */

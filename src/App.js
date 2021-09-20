@@ -99,9 +99,9 @@ export default class App extends Component {
             </Route>
           </Switch>
 
-          <div className="temporary">
+          {/* <div className="temporary">
             <h1>temp div</h1>
-          </div>
+          </div> */}
           <Footer />
         </Router>
       </div>
