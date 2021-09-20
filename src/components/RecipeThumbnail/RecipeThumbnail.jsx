@@ -23,7 +23,7 @@ export default class RecipeThumbnail extends Component {
             backgroundImage: `url(${recipe.images.small})`,
             backgroundSize: "cover",
           }}>
-          {!sliderStyle ? <h3>{recipe.name}</h3> : " "}
+          {!sliderStyle && <h3>{recipe.name}</h3>}
         </div>
       </Link>
     );
