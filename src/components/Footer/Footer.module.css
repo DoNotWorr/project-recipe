@@ -1,0 +1,61 @@
+/* Position */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+}
+
+.socialMedia,
+.links,
+.newsLetter {
+  justify-content: center;
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  list-style: none;
+}
+
+.links,
+.newsLetter {
+  margin: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+.newsLetter input {
+  height: 2em;
+}
+
+.button {
+  border-radius: 1em;
+  padding: 0.5em;
+  cursor: pointer;
+  border: none;
+}
+
+/* Colors, Fonts */
+.links svg {
+  fill: #eafdf9;
+}
+
+.text {
+  font-weight: bold;
+  color: #eafdf9;
+}
+
+.button {
+  background-color: #db5151;
+  font-size: unset;
+}
+
+.footer {
+  background-color: #1b6e6e;
+}
+
+@media screen and (max-width: 300px) {
+  /* At this point flex wrap starts behave strange because of the social media links */
+  .links {
+    flex-direction: column;
+  }
+}

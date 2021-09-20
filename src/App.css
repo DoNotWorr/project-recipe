@@ -14,3 +14,8 @@
 .App h3 {
   color: rgba(27, 110, 110);
 }
+
+.temporary {
+  background-color: white;
+  height: 100px;
+}
