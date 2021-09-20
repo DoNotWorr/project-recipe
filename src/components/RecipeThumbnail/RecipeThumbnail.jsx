@@ -12,16 +12,17 @@ export default class RecipeThumbnail extends Component {
     const recipe = this.props.recipe;
 
     return (
-      <div className={styles.thumbnail} data-testid="recipeThumbnail">
-        <Link to={`/recipe/${recipe.id}`}>
+      <Link to={`/recipe/${recipe.id}`}>
+        <div
+          className={styles.thumbnail}
+          data-testid="recipeThumbnail"
+          style={{
+            backgroundImage: `url(${recipe.images.small})`,
+            backgroundSize: "cover",
+          }}>
           <h3 className={styles.recipeName}>{recipe.name}</h3>
-          <img
-            className={styles.thumbnailImg}
-            src={recipe.images.small}
-            alt={recipe.name}
-          />
-        </Link>
-      </div>
+        </div>
+      </Link>
     );
   }
 }
