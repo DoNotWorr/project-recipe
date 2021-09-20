@@ -5,14 +5,22 @@
 
 .App {
   text-align: center;
-  background-color: rgb(41, 196, 196);
+  background-color: var(--background);
   font-family: "Montserrat", sans-serif;
+  height: 2000px; /*pixles to make sure background color covers whole page*/
 }
 .App h2 {
-  color: #eafdf9;
+  color: var(--titles);
+  padding: 5vh 0 1vh 0;
 }
 .App h3 {
-  color: rgba(27, 110, 110);
+  color: var(--navbarcolor);
+}
+:root {
+  --background: rgb(41, 196, 196);
+  --navbarcolor: rgba(27, 110, 110);
+  --titles: rgba(245, 113, 113);
+  --ingtitles: rgb(241, 240, 240); /*instructions and ingredients*/
 }
 
 .temporary {

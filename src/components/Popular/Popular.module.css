@@ -12,24 +12,27 @@
 
 /* Color */
 .arrow svg {
-  fill: blue;
+  fill: #eafdf9;
 }
 
 .page {
-  background-color: green;
+  background-color: #eafdf9;
 }
 
 /* Color of active page button
  (Splide doesn't support naming this class) */
 :global(button.splide__pagination__page.is-active) {
-  background-color: red;
+  background-color: rgba(27, 110, 110);
 }
 
 /* Color when hover */
 .page:hover {
-  background-color: rebeccapurple;
+  background-color: rgba(27, 110, 110);
 }
 
 .arrow:hover svg {
-  fill: rebeccapurple;
+  fill: rgba(27, 110, 110);
+}
+
+h2 {
 }

@@ -15,23 +15,33 @@ export default function Recipe(props) {
 
   return (
     <div className={styles.recipe}>
-      <h2>{recipe.name}</h2>
-      <img src={recipe.images.big} alt={recipe.name} />
-      <h2>Ingredients</h2>
-      <ul className={styles.ingredients}>
-        {recipe.ingredients.map((ingredient) => (
-          <li>
-            {ingredient.name} {ingredient.quantity} {ingredient.unit}
-          </li>
-        ))}
-      </ul>
+      <div className={styles.imgContainer}>
+        <h2>{recipe.name}</h2>
+        <img
+          className={styles.image}
+          src={recipe.images.big}
+          alt={recipe.name}
+        />
+      </div>
 
-      <h2>Instructions</h2>
-      <ol className={styles.instructions}>
-        {recipe.instructions.map((instruction) => (
-          <li>{instruction}</li>
-        ))}
-      </ol>
+      <div className={styles.ingrContainer}>
+        <h3>Ingredients</h3>
+        <ul className={styles.ingredients}>
+          {recipe.ingredients.map((ingredient) => (
+            <li>
+              {ingredient.name} {ingredient.quantity} {ingredient.unit}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className={styles.instrContainer}>
+        <h3>Instructions</h3>
+        <ol className={styles.instructions}>
+          {recipe.instructions.map((instruction) => (
+            <li>{instruction}</li>
+          ))}
+        </ol>
+      </div>
     </div>
   );
 }

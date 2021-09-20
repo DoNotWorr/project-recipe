@@ -1,3 +1,12 @@
+.recipe {
+  display: inline-block;
+}
+
+.image {
+  width: 100vh;
+  height: auto;
+}
+
 .ingredients {
   display: flex;
   flex-direction: column;
@@ -15,6 +24,9 @@
   padding: 0 0 6vh 0;
 }
 
-.recipe h1 {
+.recipe h3 {
+  color: var(--ingtitles);
+}
+.recipe h2 {
   padding: 4vh;
 }
