@@ -2,6 +2,7 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 import Category from "../components/Category/Category";
+import { BrowserRouter } from "react-router-dom";
 
 const recipes = {
   recipes: [
@@ -34,7 +35,11 @@ const recipes = {
 
 describe("<RecipeThumbnail />", () => {
   test("Elements render", () => {
-    render(<Category recipes={recipes.recipes} category="Main Course" />);
+    render(
+      <BrowserRouter>
+        <Category recipes={recipes.recipes} category="Main Course" />
+      </BrowserRouter>
+    );
 
     const overviewContainer = screen.getByTestId("OverviewContainer");
 
