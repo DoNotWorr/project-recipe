@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-size: 16px;
 }
 
 .App {
@@ -9,7 +10,11 @@
   font-family: "Montserrat", sans-serif;
   height: 100%;
 }
+.App h1 {
+  font-size: 5rem;
+}
 .App h2 {
+  font-size: 2rem;
   color: var(--titles);
   padding: 5vh 0 1vh 0;
 }
