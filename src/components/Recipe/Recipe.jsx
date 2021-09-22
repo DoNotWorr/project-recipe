@@ -16,7 +16,15 @@ export default function Recipe(props) {
   return (
     <div className={styles.recipe}>
       <div className={styles.imgContainer}>
-        <h2>{recipe.name}</h2>
+        <div className={styles.title}>
+          <h2>{recipe.name}</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni qui
+            laborum assumenda molestias voluptates voluptatum perferendis
+            voluptate odit voluptatibus id! Quibusdam quas qui adipisci. Magni
+            libero tempora quos non consequatur?
+          </p>
+        </div>
         <img
           className={styles.image}
           src={recipe.images.big}
@@ -24,23 +32,25 @@ export default function Recipe(props) {
         />
       </div>
 
-      <div className={styles.ingrContainer}>
-        <h3>Ingredients</h3>
-        <ul className={styles.ingredients}>
-          {recipe.ingredients.map((ingredient) => (
-            <li key={ingredient.name}>
-              {ingredient.name} {ingredient.quantity} {ingredient.unit}
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div className={styles.instrContainer}>
-        <h3>Instructions</h3>
-        <ol className={styles.instructions}>
-          {recipe.instructions.map((instruction) => (
-            <li key={instruction}>{instruction}</li>
-          ))}
-        </ol>
+      <div className={styles.ingredientContainer}>
+        <div className={styles.ingredients}>
+          <h3>Ingredients</h3>
+          <ul>
+            {recipe.ingredients.map((ingredient) => (
+              <li key={ingredient.name}>
+                {ingredient.name} {ingredient.quantity} {ingredient.unit}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className={styles.instructions}>
+          <h3>Instructions</h3>
+          <ol>
+            {recipe.instructions.map((instruction) => (
+              <li key={instruction}>{instruction}</li>
+            ))}
+          </ol>
+        </div>
       </div>
     </div>
   );

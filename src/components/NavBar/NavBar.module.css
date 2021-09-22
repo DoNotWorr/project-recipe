@@ -28,7 +28,7 @@
   text-decoration: none;
   list-style: none;
   color: #eafdf9;
-  font-size: 4vh;
+  font-size: 1.5rem;
   padding: 0 2vh 0.5vh 2vh;
 }
 
@@ -45,7 +45,7 @@
 
 /*MEDIA-QUERIES*/
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1250px) {
   .navbar .hamburger {
     padding: 4vh;
     display: flex;
@@ -55,7 +55,8 @@
   }
 
   .navbar .links:global(#hidden) {
-    font-size: 3vh;
+    box-sizing: border-box;
+    font-size: 2rem;
     z-index: 1;
     position: absolute;
     display: flex;
@@ -63,7 +64,7 @@
     flex-direction: column;
     width: 100%;
     background-color: rgb(27, 110, 110, 0.8);
-    margin: 0;
+
     padding: 3vh;
   }
 }

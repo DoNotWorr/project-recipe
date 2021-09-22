@@ -1,32 +1,106 @@
 .recipe {
-  display: inline-block;
+  color: var(--ingtitles);
+  margin: 5vw;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2vw;
 }
 
+/* IMAGE AND RECIPE-INFO*/
+.imgContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem;
+  width: 100%;
+}
+.title {
+  color: var(--navbarcolor);
+  width: 20vw;
+  display: inline-flex;
+  flex-direction: column;
+  order: 1;
+}
+.title h2 {
+  font-size: 3rem;
+}
 .image {
-  width: 100vh;
-  height: auto;
+  display: flex;
+  order: 2;
+  width: 35vw;
+  box-shadow: 0 4px 8px 0 var(--navbarcolor), 0 6px 20px 0 var(--navbarcolor);
 }
 
+/*INGREDIENTS AND INSTRUCTIONS*/
+.ingredientContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
 .ingredients {
   display: flex;
   flex-direction: column;
-  list-style: disc inside;
-  margin: 0;
-}
-.ingredients ul li {
-  text-align: left;
+  background-color: rgba(219, 81, 81);
+  order: 3;
+  width: 20vw;
+
+  box-shadow: 0 4px 8px 0 var(--navbarcolor), 0 6px 20px 0 var(--navbarcolor);
 }
 
+.ingredients ul {
+  list-style: disc inside;
+  padding: 0 0 6vh 0;
+}
+.ingredients ul li {
+  text-align: center;
+}
 .instructions {
   display: flex;
-  list-style: decimal inside;
   flex-direction: column;
+  background-color: var(--titles);
+  order: 4;
+  width: 35vw;
+
+  box-shadow: 0 4px 8px 0 var(--navbarcolor), 0 6px 20px 0 var(--navbarcolor);
+}
+.instructions ol {
+  list-style: decimal inside;
   padding: 0 0 6vh 0;
 }
 
-.recipe h3 {
+/* TITLES*/
+.instructions h3 {
   color: var(--ingtitles);
+  padding: 2vh;
 }
-.recipe h2 {
-  padding: 4vh;
+.ingredients h3 {
+  color: var(--ingtitles);
+  padding: 2vh;
+}
+
+/*MEDIA-QUERIES*/
+@media only screen and (max-width: 1250px) {
+  .imgContainer {
+    flex-wrap: wrap;
+  }
+  p {
+    display: none;
+  }
+  .title {
+    width: 100%;
+  }
+  .image {
+    width: 100%;
+  }
+  .ingredients {
+    width: 100%;
+  }
+  .instructions {
+    width: 100%;
+  }
+  .ingredientContainer {
+    flex-wrap: wrap;
+  }
 }
