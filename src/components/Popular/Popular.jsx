@@ -14,14 +14,19 @@ export default class Popular extends Component {
     ));
     return (
       <>
-        <h2>Popular Dishes</h2>
+        <h2 className={styles.title}>Popular Dishes</h2>
+
         <Splide
           className={styles.container}
           options={{
             perPage: 5,
             easing: "ease",
             interval: 5000,
-            breakpoints: { 599: { perPage: 3 }, 999: { perPage: 4 } },
+            breakpoints: {
+              999: { perPage: 4 },
+              599: { perPage: 3 },
+              330: { perPage: 1 },
+            },
             classes: {
               // Add classes for arrows.
               arrows: `splide__arrows ${styles.arrows}`,
