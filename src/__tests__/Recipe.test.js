@@ -35,20 +35,55 @@ const sampleRecipe = {
   },
 };
 
-const mockFunction = (id) => sampleRecipe;
+const sampleRecipe2 = {
+  id: "2",
+  name: "Salami Sandwich",
+  ingredients: [
+    {
+      name: "flour",
+      quantity: 2,
+      unit: "table spoon",
+    },
+    {
+      name: "sugar",
+      quantity: 10,
+      unit: "gram",
+    },
+    {
+      name: "milk",
+      quantity: 1,
+      unit: "deciliter",
+    },
+  ],
+  instructions: [
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit eu quam quis porta.",
+    "Duis magna elit, sodales ut nisl et, efficitur tristique lacus.",
+  ],
+  category: "Appetizers",
+  images: {
+    small: "/images/avokado_small.jpg",
+    big: "/images/avokado_big.jpg",
+  },
+};
 
 describe("<Recipe />", () => {
   test("should work", () => {
-    render(
+    const mockFunction = jest.fn().mockReturnValue(sampleRecipe);
+    const tree = render(
       <BrowserRouter>
         <Recipe getRecipeById={mockFunction} key={sampleRecipe.id} />
       </BrowserRouter>
     );
 
-    const h2 = screen.getByText(sampleRecipe.name);
-    const img = screen.getByAltText(sampleRecipe.name);
+    expect(tree).toMatchSnapshot();
+  });
 
-    expect(h2).toBeInTheDocument();
-    expect(img).toBeInTheDocument();
+  test("should work with other recipe", () => {
+    const mockFunction = jest.fn().mockReturnValue(sampleRecipe2);
+    render(
+      <BrowserRouter>
+        <Recipe getRecipeById={mockFunction} key={sampleRecipe2.id} />
+      </BrowserRouter>
+    );
   });
 });
