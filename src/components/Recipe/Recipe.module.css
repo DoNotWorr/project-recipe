@@ -1,4 +1,5 @@
 .recipe {
+  box-sizing: border-box;
   color: var(--ingtitles);
   margin: 5vw;
   display: flex;
@@ -8,6 +9,7 @@
 
 /* IMAGE AND RECIPE-INFO*/
 .imgContainer {
+  box-sizing: border-box;
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
@@ -34,6 +36,7 @@
 
 /*INGREDIENTS AND INSTRUCTIONS*/
 .ingredientContainer {
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -102,5 +105,10 @@
   }
   .ingredientContainer {
     flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 280px) {
+  .title h2 {
+    font-size: 1.5rem;
   }
 }

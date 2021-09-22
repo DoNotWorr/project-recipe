@@ -32,7 +32,7 @@ const NavBar = () => {
     <div className={styles.navbar} ref={ref}>
       <h1>Logo</h1>
 
-      <div className={styles.links} id={isMenuOpen ? "hidden" : ""}>
+      <div className={styles.links} id={isMenuOpen ? "hidden" : "showing"}>
         <Link to="/" onClick={closeMenu}>
           Home
         </Link>
