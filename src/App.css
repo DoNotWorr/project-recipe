@@ -14,9 +14,7 @@
   font-size: 5rem;
 }
 .App h2 {
-  font-size: 2rem;
   color: var(--titles);
-  padding: 5vh 0 1vh 0;
 }
 .App h3 {
   color: var(--navbarcolor);
@@ -28,7 +26,7 @@
   --ingtitles: rgb(241, 240, 240); /*instructions and ingredients*/
   --white: rgb(234, 253, 249); /*slider arrow+ button & header*/
 }
-
+/*
 @media only screen and (max-width: 280px) {
   .App h1 {
     font-size: 1.5rem;
@@ -41,3 +39,4 @@
     font-size: 1rem;
   }
 }
+*/
