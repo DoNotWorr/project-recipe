@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-size: 16px;
 }
 
 .App {
@@ -25,18 +24,5 @@
   --titles: rgba(245, 113, 113);
   --ingtitles: rgb(241, 240, 240); /*instructions and ingredients*/
   --white: rgb(234, 253, 249); /*slider arrow+ button & header*/
+  --button: rgb(219, 81, 81); /*button in footer and ingredientscontainer*/
 }
-/*
-@media only screen and (max-width: 280px) {
-  .App h1 {
-    font-size: 1.5rem;
-  }
-  .App h2 {
-    font-size: 1rem;
-  }
-  .App h3 {
-    color: var(--navbarcolor);
-    font-size: 1rem;
-  }
-}
-*/

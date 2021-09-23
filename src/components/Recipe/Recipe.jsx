@@ -19,10 +19,11 @@ export default function Recipe(props) {
         <div className={styles.title}>
           <h2>{recipe.name}</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni qui
+            Some Amazing information about this truly amazing recipe. Lorem
+            ipsum dolor sit amet, consectetur adipisicing elit. Magni qui
             laborum assumenda molestias voluptates voluptatum perferendis
             voluptate odit voluptatibus id! Quibusdam quas qui adipisci. Magni
-            libero tempora quos non consequatur?
+            libero tempora quos non consequatur.
           </p>
         </div>
         <img

@@ -32,18 +32,36 @@
   position: absolute;
   left: 0;
   right: 0;
-  margin: 1.5rem auto;
+  margin: 5rem auto;
   font-size: 2rem;
 }
-
-@media screen and (min-width: 281px) and (max-width: 500px) {
-  h2 {
+/*MEDIA-QUERIES*/
+@media screen and (min-width: 1451px) and (max-width: 2000px) {
+  .title {
+    margin: 3rem;
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 771px) and (max-width: 1450px) {
+  .title {
+    margin: 3rem;
+  }
+}
+@media screen and (min-width: 541px) and (max-width: 770px) {
+  .title {
+    margin: 2.5rem;
+  }
+}
+@media screen and (min-width: 281px) and (max-width: 540px) {
+  .title {
     font-size: 1.5rem;
+    margin: 1.9rem;
   }
 }
 
 @media screen and (max-width: 280px) {
-  h2 {
+  .title {
     font-size: 1.3rem;
+    margin: 1.8rem;
   }
 }

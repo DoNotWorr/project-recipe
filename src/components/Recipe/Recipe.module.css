@@ -28,6 +28,11 @@
   font-size: 3rem;
   padding: 5vh 0 1vh 0;
 }
+.title p {
+  padding: 1.5vw;
+  color: var(--ingtitles);
+  line-height: 1.5rem;
+}
 .image {
   display: flex;
   order: 2;
@@ -43,10 +48,11 @@
   gap: 1rem;
   width: 100%;
 }
+/*ingredients*/
 .ingredients {
   display: flex;
   flex-direction: column;
-  background-color: rgba(219, 81, 81);
+  background-color: var(--button);
   order: 3;
   width: 20vw;
 
@@ -60,6 +66,8 @@
 .ingredients ul li {
   text-align: center;
 }
+
+/*instructions*/
 .instructions {
   display: flex;
   flex-direction: column;
