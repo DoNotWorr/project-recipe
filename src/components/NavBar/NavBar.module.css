@@ -65,7 +65,8 @@
     top: 15vh;
     flex-direction: column;
     width: 100%;
-    background-color: rgb(27, 110, 110, 0.8);
+    background-color: var(--navbarcolor);
+    opacity: 0.8;
 
     padding: 3vh;
   }
@@ -73,6 +74,6 @@
 
 @media only screen and (max-width: 521px) {
   .navbar .links:global(#hidden) {
-    background-color: rgb(27, 110, 110);
+    opacity: 1;
   }
 }
