@@ -23,16 +23,16 @@ class Footer extends Component {
           action="#"
           method="POST">
           <input
+            type="email"
+            name="email"
+            placeholder="email"
+            value={this.state.email}
+            onChange={this.handleChange}
+          />
+          <input
             type="submit"
             value="Sign up for News Letter"
             className={`${styles.text} ${styles.button}`}
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder={this.state.placeholder}
-            value={this.state.email}
-            onChange={this.handleChange}
           />
         </form>
 
