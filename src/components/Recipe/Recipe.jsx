@@ -18,13 +18,9 @@ export default function Recipe(props) {
       <div className={styles.imgContainer}>
         <div className={styles.title}>
           <h2>{recipe.name}</h2>
-          <p>
-            Some Amazing information about this truly amazing recipe. Lorem
-            ipsum dolor sit amet, consectetur adipisicing elit. Magni qui
-            laborum assumenda molestias voluptates voluptatum perferendis
-            voluptate odit voluptatibus id! Quibusdam quas qui adipisci. Magni
-            libero tempora quos non consequatur.
-          </p>
+          <p>{recipe.info} </p>
+
+          <p id={styles.time}>{recipe.time}</p>
         </div>
         <img
           className={styles.image}
