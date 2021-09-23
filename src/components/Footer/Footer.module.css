@@ -36,21 +36,21 @@
 
 /* Colors, Fonts */
 .links svg {
-  fill: #eafdf9;
+  fill: var(--white);
 }
 
 .text {
   font-weight: bold;
-  color: #eafdf9;
+  color: var(--white);
 }
 
 .button {
-  background-color: #db5151;
+  background-color: var(--button);
   font-size: unset;
 }
 
 .footer {
-  background-color: #1b6e6e;
+  background-color: var(--navbarcolor);
 }
 
 @media screen and (max-width: 300px) {

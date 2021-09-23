@@ -24,4 +24,5 @@
   --titles: rgba(245, 113, 113);
   --ingtitles: rgb(241, 240, 240); /*instructions and ingredients*/
   --white: rgb(234, 253, 249); /*slider arrow+ button & header*/
+  --button: rgb(219, 81, 81); /*button in footer and ingredientscontainer*/
 }
