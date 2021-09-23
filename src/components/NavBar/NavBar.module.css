@@ -70,13 +70,10 @@
 
     padding: 3vh;
   }
-  .navbar {
-    box-shadow: none;
-  }
 }
 
 @media only screen and (max-width: 600px) {
   .navbar .links:global(#hidden) {
-    opacity: 1;
+    opacity: 0.9;
   }
 }
