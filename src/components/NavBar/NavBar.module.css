@@ -1,3 +1,4 @@
+/*Main-div*/
 .navbar {
   background-color: rgb(27, 110, 110);
   width: 100%;
@@ -10,7 +11,7 @@
   padding: 0;
   box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
-
+/*Logo*/
 .navbar h1 {
   font-size: 5vh;
   padding: 4vh;
@@ -18,6 +19,7 @@
   vertical-align: middle;
 }
 
+/*Links*/
 .navbar .links {
   padding: 5vh;
   justify-self: right;
@@ -35,7 +37,7 @@
 .navbar .links a:hover {
   color: rgb(245, 113, 113);
 }
-
+/*Collapse-menu*/
 .navbar .hamburger {
   display: none;
 }
