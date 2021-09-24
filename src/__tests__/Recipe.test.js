@@ -6,7 +6,9 @@ import { BrowserRouter } from "react-router-dom";
 
 const sampleRecipe = {
   id: "1",
-  name: "Avokado Sandwich",
+  name: "Avocado Sandwich",
+  info: "blabla",
+  time: "20 minutes",
   ingredients: [
     {
       name: "flour",
@@ -38,6 +40,8 @@ const sampleRecipe = {
 const sampleRecipe2 = {
   id: "2",
   name: "Salami Sandwich",
+  info: "blabla",
+  time: "20 minutes",
   ingredients: [
     {
       name: "flour",
