@@ -2,7 +2,9 @@
   "recipes": [
     {
       "id": "1",
-      "name": "Avokado Sandwich",
+      "name": "Avocado Sandwich",
+      "info": "Incredibly tasty sandwich to put together when you don't want to spend too much time cooking",
+      "time": "15 minutes",
       "ingredients": [
         {
           "name": "flour",
@@ -33,6 +35,8 @@
     {
       "id": "2",
       "name": "Chicken and Pasta",
+      "info": "Smooth pasta with sautéed vegetables and chicken",
+      "time": "35 minutes",
       "ingredients": [
         {
           "name": "flour",
@@ -63,6 +67,8 @@
     {
       "id": "3",
       "name": "Carpaccio",
+      "info": "Amazing Carpaccio beef with caper and ginger ",
+      "time": "25 minutes",
       "ingredients": [
         {
           "name": "flour",
@@ -93,6 +99,8 @@
     {
       "id": "4",
       "name": "Meat and French Fries",
+      "info": "Shish-kebab with homemade crispy fries, best served with fresh vegetables and garlic sauce",
+      "time": "40 minutes",
       "ingredients": [
         {
           "name": "flour",
@@ -123,6 +131,8 @@
     {
       "id": "5",
       "name": "Beef tacos",
+      "info": "Real Mexican recipe with amazing hot sauce and fresh cilantro",
+      "time": "55 minutes",
       "ingredients": [
         {
           "name": "flour",
@@ -153,6 +163,8 @@
     {
       "id": "6",
       "name": "Chocolate Cupcake",
+      "info": "Lovely chocolately smooth cupcake with butterfrosting and fresh raspberries",
+      "time": "60 minutes",
       "ingredients": [
         {
           "name": "flour",
@@ -183,6 +195,8 @@
     {
       "id": "7",
       "name": "Homemade Sorbet",
+      "info": "Delicious icy sorbet, you can pick any flavor you like but here we've used mango, strawberries and raspberries",
+      "time": "75 minutes",
       "ingredients": [
         {
           "name": "flour",
